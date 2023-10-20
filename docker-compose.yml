@@ -9,3 +9,8 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
+    volumes:
+      - fincheck_data:/var/lib/postgresql/data
+    
+volumes:
+  fincheck_data:
